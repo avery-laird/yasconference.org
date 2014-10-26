@@ -21,8 +21,8 @@
 <link rel="stylesheet" href="{% static "css/bootstrap-theme.css" %}">
 
 <link rel="stylesheet" href="{% static "css/normalize.css" %}" />
-<link rel="stylesheet" href="{% static "css/demo.css" %}" />
-<link rel="stylesheet" href="{% static "css/effect1.css" %}" />
+<!--<link rel="stylesheet" href="{% static "css/demo.css" %}" />-->
+<link rel="stylesheet" href="{% static "css/effect2.css" %}" />
 
 
 {% if LANGUAGE_BIDI %}
@@ -56,7 +56,31 @@
 
 <body id="{% block body_id %}body{% endblock %}">
 
-<!--
+<!-- CONTAINER -->
+<div id="ip-container" class="ip-container">
+
+    <!-- initial header -->
+    <header class="ip-header">
+
+        <h1 class="ip-logo">
+            <svg class="ip-inner" width="100%" height="100%" viewBox="50 0 300 160" preserveAspectRatio="xMidYMin meet" aria-labelledby="logo_title">
+                <title id="logo_title">yasconference</title>
+                <!--<path d="M150 0 L150 150    Z" />-->
+                <text x="100" y="80"  font-size="100" >YAS</text>
+            </svg>
+       </h1>
+
+        <div class="ip-loader">
+            <svg class="ip-inner" width="60px" height="60px" viewBox="0 0 80 80">
+                <path class="ip-loader-circlebg" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
+                <path id="ip-loader-circle" class="ip-loader-circle" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
+            </svg>
+        </div>
+
+    </header>
+
+</div>
+
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
 <div class="container">
 <div class="navbar-header">
@@ -111,10 +135,9 @@
     {% endblock %}
 </div>
 
-<div class="col-md-7 middle">
--->
+<div class="col-md-7 middle ip-main">
     {% block main %}{% endblock %}
-<!--
+
 </div>
 
 
@@ -156,9 +179,10 @@
 </p>
 </div>
 </div>
+
 </footer>
 
 {% include "includes/footer_scripts.html" %}
--->
+
 </body>
 </html>

@@ -72,10 +72,18 @@
 .ip-header .ip-logo svg path {
 	fill: #1c9ccd;
 }
+.ip-header .ip-logo svg text {
+        fill: #1c9ccd;
+}
+
 
 .ip-header .ip-loader svg path {
 	fill: none;
 	stroke-width: 6;
+}
+.ip-header .ip-loader svg text {
+        fill: none;
+        stroke-width: 6;
 }
 
 .ip-header .ip-loader svg path.ip-loader-circlebg {
@@ -238,6 +246,12 @@
 	transition: all 0.5s ease 0.3s;
 	fill: #fff;
 }
+.loaded .ip-logo svg text {
+        -webkit-transition: all 0.5s ease 0.3s;
+        transition: all 0.5s ease 0.3s;
+        fill: #fff;
+}
+
 
 /* Header animation when loading finishes */
 .loaded .ip-header {
@@ -308,6 +322,9 @@
 
 .no-js .ip-header .ip-logo svg path {
 	fill: #fff;
+}
+.no-js .ip-header .ip-logo svg text {
+        fill: #fff;
 }
 
 /* Media queries */
