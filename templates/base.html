@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ LANGUAGE_CODE }}"{% if LANGUAGE_BIDI %} dir="rtl"{% endif %} class="js cssanimations">
+<html lang="{{ LANGUAGE_CODE }}"{% if LANGUAGE_BIDI %} dir="rtl"{% endif %}>
 {% load pages_tags mezzanine_tags i18n future staticfiles %}
 
 <head>
@@ -20,9 +20,11 @@
 <link rel="stylesheet" href="{% static "css/mezzanine.css" %}">
 <link rel="stylesheet" href="{% static "css/bootstrap-theme.css" %}">
 
-<link rel="stylesheet" href="{% static "css/normalize.css" %}" />
-<!--<link rel="stylesheet" href="{% static "css/demo.css" %}" />-->
-<link rel="stylesheet" href="{% static "css/effect2.css" %}" />
+
+<link rel="stylesheet" href="{% static "css/component.css" %}">
+<link rel="stylesheet" href="{% static "css/normalize.css" %}">
+<link rel="stylesheet" href="{% static "css/custom.css" %}">
+<!--<link rel="stylesheet" href="{% static "css/style5.css" %}">Dropdown styles-->
 
 
 {% if LANGUAGE_BIDI %}
@@ -33,16 +35,44 @@
 {% if LANGUAGE_BIDI %}
 <link rel="stylesheet" href="{% static "css/cartridge.rtl.css" %}">
 {% endif %}
-
 {% endifinstalled %}
-{% block extra_css %}{% endblock %}
+{% block extra_css %}
+
+{% endblock %}
 {% endcompress %}
 
 {% compress js %}
 <script src="{% static "mezzanine/js/"|add:settings.JQUERY_FILENAME %}"></script>
 <script src="{% static "js/bootstrap.js" %}"></script>
 <script src="{% static "js/bootstrap-extras.js" %}"></script>
+<script src="{% static "js/modernizr.custom.js" %}"></script>
+<script src="{% static "js/jquery.dropdown.js" %}"></script>
+<script src="{% static "js/modernizr.custom.63321.js" %}"></script>
+
+
 {% block extra_js %}
+<script>
+/*
+$(document).ready(function (){
+$("#home").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#site-header").offset().top
+    }, 2000);
+});
+});*/
+
+$(document).ready(function (){
+$("nav.cl-effect-14 div a").hover(function(){
+    var bubble = $(this).attr('id');
+    $("#"+bubble+"q").fadeIn();
+    },
+    function() {
+        var bubble = $(this).attr('id');
+        $("#"+bubble+"q").fadeOut(1000);
+
+    });
+});
+</script>
 {% endblock %}
 {% endcompress %}
 
@@ -54,34 +84,36 @@
 {% block extra_head %}{% endblock %}
 </head>
 
-<body id="{% block body_id %}body{% endblock %}">
+<body id="{% block body_id %}body{% endblock %}" data-spy="scroll" data-target="#affix">
 
-<!-- CONTAINER -->
-<div id="ip-container" class="ip-container">
-
-    <!-- initial header -->
-    <header class="ip-header">
-
-        <h1 class="ip-logo">
-            <svg class="ip-inner" width="100%" height="100%" viewBox="50 0 300 160" preserveAspectRatio="xMidYMin meet" aria-labelledby="logo_title">
-                <title id="logo_title">yasconference</title>
-                <!--<path d="M150 0 L150 150    Z" />-->
-                <text x="100" y="80"  font-size="100" >YAS</text>
-            </svg>
-       </h1>
-
-        <div class="ip-loader">
-            <svg class="ip-inner" width="60px" height="60px" viewBox="0 0 80 80">
-                <path class="ip-loader-circlebg" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
-                <path id="ip-loader-circle" class="ip-loader-circle" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
-            </svg>
-        </div>
-
-    </header>
-
+<div class="media">
+     <img src="{% static "img/logo.jpg" %}" class="pull-left media-object logo" alt="Responsive image">
+<div class="cl-effect-14 media-body">
+    <h1>Youth Achieving Success</h1>
+</div>
 </div>
 
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+<nav class="cl-effect-14">
+    <div id="affix" data-spy="affix" data-offset-top="300" data-offset-bottom="0px" class="hidden-xs hidden-sm hidden-md">
+    <a href="#site-header" id="home">HOME</a>
+    <a id="about" href="/about/">ABOUT US
+      <div id="aboutq" class="quote" style="background:#F57AE5;"><blockquote><p>Executive Team</p><hr><p>Regional Marketers</p></blockquote></div>
+    </a>
+    <a id="conference" href="/conference/">CONFERENCE
+        <div id="conferenceq" class="quote" style="background:#F3D879;"><blockquote><p>Networking</p><hr><p>Schedule and Venue</p><hr><p>YAS Scholarship</p></blockquote></div>
+    </a>
+    
+    <a id="career-focuses" href="/career-focuses/">CAREER FOCUSES
+        <div id="career-focusesq" class="quote" style="background:#F57A96;"><blockquote><p>Engineering</p><hr><p>Game Design</p><hr><p>Investment Banking</p><hr><p>...</p></blockquote></div>
+    </a>
+    <a href="/registration/">REGISTRATION</a>
+    <a href="/sponsorship/">SPONSORSHIP</a>
+    <a id="contact" href="/contact/">CONTACT US
+    <div id="contactq" class="quote"><blockquote><p>FAQ</p></blockquote></div></a>
+</nav>
+
+<!--
+<div class="navbar navbar-default" role="navigation">
 <div class="container">
 <div class="navbar-header">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -99,9 +131,8 @@
 </div>
 </div>
 </div>
-
-
-<div class="container">
+-->
+<div id="site-header" class="container">
 
 {% nevercache %}
 {% if messages %}
@@ -135,11 +166,9 @@
     {% endblock %}
 </div>
 
-<div class="col-md-7 middle ip-main">
+<div class="col-md-7 middle">
     {% block main %}{% endblock %}
-
 </div>
-
 
 <div class="col-md-3 right">
     {% nevercache %}
@@ -161,7 +190,8 @@
 
 <footer>
 <div class="container">
-{% page_menu "pages/menus/footer.html" %}
+
+{#{% page_menu "pages/menus/footer.html" %}#}
 
 <div class="row">
 <p class="site-info text-center">
@@ -179,7 +209,6 @@
 </p>
 </div>
 </div>
-
 </footer>
 
 {% include "includes/footer_scripts.html" %}
