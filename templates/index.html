@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load i18n %}
+{% load i18n mezzanine_tags blog_tags %}
 
 {% block meta_title %}{% trans "Home" %}{% endblock %}
 {% block title %}{% trans "Home" %}{% endblock %}
@@ -9,14 +9,6 @@
 {% endblock %}
 
 {% block main %}
-{% blocktrans %}
-<h2>Congratulations!</h2>
-<p>
-    Welcome to your new Mezzanine powered website.
-    Here are some quick links to get you started:
-</p>
-<nav class="cl-effect-3">
-    <a href="/admin/">Log in to the admin interface</a>
-</nav>
-{% endblocktrans %}
+
+
 {% endblock %}

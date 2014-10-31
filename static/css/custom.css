@@ -68,7 +68,8 @@ background: #b4770d;
 
 
 .affix-bottom {
-bottom: 280px;
+top: 200px;
+position: relative;
 }
 
 .affix{
