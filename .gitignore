@@ -1,0 +1,9 @@
+lib/
+local/
+local_settings.py
+bin/
+run/
+include/
+inspiration/
+run/
+*.pyc
