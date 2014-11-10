@@ -1,3 +1,13 @@
+.media:first-child {
+margin-top: -100px;
+}
+
+#span {
+padding-top: 4em;
+background-image: url('../img/span.svg');
+background-attachment: fixed;
+}
+
 hr {
 padding-top: 0px;
 padding-bottom: 0px;
@@ -54,8 +64,8 @@ text-align: justify;
 }
 
 .logo {
-max-width: 20%;
-
+max-width: 80%;
+padding-bottom: 100px;
 }
 
 .cl-effect-14 a:before {
@@ -98,8 +108,8 @@ margin-right: 70px;
 nav.cl-effect-14 {
 padding: 0em 3em;
 /*background:#F19F0F;*/
-padding-bottom: 180px;
-padding-top: 11em;
+
+//padding-top: 11em;
 }
 
 

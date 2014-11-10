@@ -1,0 +1,352 @@
+[2014-11-02 18:17:44 +0000] [28626] [DEBUG] Current configuration:
+  proxy_protocol: False
+  worker_connections: 1000
+  syslog: False
+  statsd_host: None
+  post_fork: <function post_fork at 0x950f224>
+  pythonpath: /home/avery/Websites
+  enable_stdio_inheritance: False
+  worker_class: sync
+  ssl_version: 3
+  suppress_ragged_eofs: True
+  syslog_facility: user
+  when_ready: <function when_ready at 0x950f0d4>
+  pre_fork: <function pre_fork at 0x950f17c>
+  cert_reqs: 0
+  preload_app: False
+  workers: 3
+  keepalive: 2
+  accesslog: None
+  pidfile: None
+  worker_tmp_dir: None
+  group: 100
+  graceful_timeout: 30
+  spew: False
+  proc_name: yasconference
+  umask: 0
+  on_reload: <function on_reload at 0x950f02c>
+  post_worker_init: <function post_worker_init at 0x950f2cc>
+  pre_exec: <function pre_exec at 0x950f4c4>
+  limit_request_fields: 100
+  on_exit: <function on_exit at 0x950f7d4>
+  config: None
+  logconfig: None
+  check_config: False
+  do_handshake_on_connect: False
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  proxy_allow_ips: ['127.0.0.1']
+  pre_request: <function pre_request at 0x950f56c>
+  post_request: <function post_request at 0x950f5dc>
+  forwarded_allow_ips: ['127.0.0.1']
+  worker_int: <function worker_int at 0x950f374>
+  ca_certs: None
+  threads: 1
+  max_requests: 0
+  chdir: /home/avery/Websites/yasconference
+  daemon: False
+  user: 1000
+  limit_request_line: 4094
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  certfile: None
+  worker_exit: <function worker_exit at 0x950f684>
+  paste: None
+  default_proc_name: yasconference.wsgi:application
+  errorlog: gunicorn.log
+  logger_class: gunicorn.glogging.Logger
+  syslog_addr: udp://localhost:514
+  syslog_prefix: None
+  ciphers: TLSv1
+  worker_abort: <function worker_abort at 0x950f41c>
+  loglevel: debug
+  bind: ['unix:/home/avery/Websites/yasconference/run/gunicorn.sock']
+  raw_env: []
+  reload: False
+  limit_request_field_size: 8190
+  nworkers_changed: <function nworkers_changed at 0x950f72c>
+  timeout: 30
+  on_starting: <function on_starting at 0x9508f44>
+  debug: False
+  django_settings: None
+  tmp_upload_dir: None
+  keyfile: None
+  backlog: 2048
+[2014-11-02 18:17:44 +0000] [28626] [INFO] Starting gunicorn 19.1.1
+[2014-11-02 18:17:44 +0000] [28626] [DEBUG] Arbiter booted
+[2014-11-02 18:17:44 +0000] [28626] [INFO] Listening at: unix:/home/avery/Websites/yasconference/run/gunicorn.sock (28626)
+[2014-11-02 18:17:44 +0000] [28626] [INFO] Using worker: sync
+[2014-11-02 18:17:44 +0000] [28637] [INFO] Booting worker with pid: 28637
+[2014-11-02 18:17:44 +0000] [28638] [INFO] Booting worker with pid: 28638
+[2014-11-02 18:17:44 +0000] [28639] [INFO] Booting worker with pid: 28639
+[2014-11-02 18:17:44 +0000] [28626] [DEBUG] 3 workers
+[2014-11-02 18:17:47 +0000] [28626] [DEBUG] 3 workers
+[2014-11-02 18:17:47 +0000] [28626] [INFO] Handling signal: winch
+[2014-11-02 18:17:47 +0000] [28626] [DEBUG] SIGWINCH ignored. Not daemonized
+[2014-11-02 18:17:47 +0000] [28626] [DEBUG] 3 workers
+[2014-11-02 18:18:04 +0000] [28626] [DEBUG] 3 workers
+[2014-11-02 18:18:04 +0000] [28626] [INFO] Handling signal: winch
+[2014-11-02 18:18:04 +0000] [28626] [DEBUG] SIGWINCH ignored. Not daemonized
+[2014-11-02 18:18:04 +0000] [28626] [DEBUG] 3 workers
+[2014-11-02 18:18:19 +0000] [28637] [INFO] Worker exiting (pid: 28637)
+[2014-11-02 18:18:19 +0000] [28626] [DEBUG] 3 workers
+[2014-11-02 18:18:19 +0000] [28626] [INFO] Handling signal: int
+[2014-11-02 18:18:19 +0000] [28638] [INFO] Worker exiting (pid: 28638)
+[2014-11-02 18:18:19 +0000] [28639] [INFO] Worker exiting (pid: 28639)
+[2014-11-02 18:18:20 +0000] [28626] [INFO] Shutting down: Master
+[2014-11-02 18:19:07 +0000] [28707] [DEBUG] Current configuration:
+  proxy_protocol: False
+  worker_connections: 1000
+  syslog: False
+  statsd_host: None
+  post_fork: <function post_fork at 0x85f4224>
+  pythonpath: /home/avery/Websites
+  enable_stdio_inheritance: False
+  worker_class: sync
+  ssl_version: 3
+  suppress_ragged_eofs: True
+  syslog_facility: user
+  when_ready: <function when_ready at 0x85f40d4>
+  pre_fork: <function pre_fork at 0x85f417c>
+  cert_reqs: 0
+  preload_app: False
+  workers: 3
+  keepalive: 2
+  accesslog: None
+  pidfile: None
+  worker_tmp_dir: None
+  group: 100
+  graceful_timeout: 30
+  spew: False
+  proc_name: yasconference
+  umask: 0
+  on_reload: <function on_reload at 0x85f402c>
+  post_worker_init: <function post_worker_init at 0x85f42cc>
+  pre_exec: <function pre_exec at 0x85f44c4>
+  limit_request_fields: 100
+  on_exit: <function on_exit at 0x85f47d4>
+  config: None
+  logconfig: None
+  check_config: False
+  do_handshake_on_connect: False
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  proxy_allow_ips: ['127.0.0.1']
+  pre_request: <function pre_request at 0x85f456c>
+  post_request: <function post_request at 0x85f45dc>
+  forwarded_allow_ips: ['127.0.0.1']
+  worker_int: <function worker_int at 0x85f4374>
+  ca_certs: None
+  threads: 1
+  max_requests: 0
+  chdir: /home/avery/Websites/yasconference
+  daemon: False
+  user: 1000
+  limit_request_line: 4094
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  certfile: None
+  worker_exit: <function worker_exit at 0x85f4684>
+  paste: None
+  default_proc_name: yasconference.wsgi:application
+  errorlog: gunicorn.log
+  logger_class: gunicorn.glogging.Logger
+  syslog_addr: udp://localhost:514
+  syslog_prefix: None
+  ciphers: TLSv1
+  worker_abort: <function worker_abort at 0x85f441c>
+  loglevel: debug
+  bind: ['unix:/home/avery/Websites/yasconference/run/gunicorn.sock']
+  raw_env: []
+  reload: False
+  limit_request_field_size: 8190
+  nworkers_changed: <function nworkers_changed at 0x85f472c>
+  timeout: 30
+  on_starting: <function on_starting at 0x85edf44>
+  debug: False
+  django_settings: None
+  tmp_upload_dir: None
+  keyfile: None
+  backlog: 2048
+[2014-11-02 18:19:07 +0000] [28707] [INFO] Starting gunicorn 19.1.1
+[2014-11-02 18:19:07 +0000] [28707] [DEBUG] Arbiter booted
+[2014-11-02 18:19:07 +0000] [28707] [INFO] Listening at: unix:/home/avery/Websites/yasconference/run/gunicorn.sock (28707)
+[2014-11-02 18:19:07 +0000] [28707] [INFO] Using worker: sync
+[2014-11-02 18:19:07 +0000] [28718] [INFO] Booting worker with pid: 28718
+[2014-11-02 18:19:07 +0000] [28719] [INFO] Booting worker with pid: 28719
+[2014-11-02 18:19:07 +0000] [28720] [INFO] Booting worker with pid: 28720
+[2014-11-02 18:19:07 +0000] [28707] [DEBUG] 3 workers
+[2014-11-02 18:19:13 +0000] [28719] [INFO] Worker exiting (pid: 28719)
+[2014-11-02 18:19:13 +0000] [28718] [INFO] Worker exiting (pid: 28718)
+[2014-11-02 18:19:13 +0000] [28707] [DEBUG] 3 workers
+[2014-11-02 18:19:13 +0000] [28707] [INFO] Handling signal: int
+[2014-11-02 18:19:13 +0000] [28720] [INFO] Worker exiting (pid: 28720)
+[2014-11-02 18:19:13 +0000] [28707] [INFO] Shutting down: Master
+[2014-11-02 18:22:21 +0000] [28944] [DEBUG] Current configuration:
+  proxy_protocol: False
+  worker_connections: 1000
+  syslog: False
+  statsd_host: None
+  post_fork: <function post_fork at 0xa4da224>
+  pythonpath: /home/avery/Websites
+  enable_stdio_inheritance: False
+  worker_class: sync
+  ssl_version: 3
+  suppress_ragged_eofs: True
+  syslog_facility: user
+  when_ready: <function when_ready at 0xa4da0d4>
+  pre_fork: <function pre_fork at 0xa4da17c>
+  cert_reqs: 0
+  preload_app: False
+  workers: 3
+  keepalive: 2
+  accesslog: None
+  pidfile: None
+  worker_tmp_dir: None
+  group: 100
+  graceful_timeout: 30
+  spew: False
+  proc_name: yasconference
+  umask: 0
+  on_reload: <function on_reload at 0xa4da02c>
+  post_worker_init: <function post_worker_init at 0xa4da2cc>
+  pre_exec: <function pre_exec at 0xa4da4c4>
+  limit_request_fields: 100
+  on_exit: <function on_exit at 0xa4da7d4>
+  config: None
+  logconfig: None
+  check_config: False
+  do_handshake_on_connect: False
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  proxy_allow_ips: ['127.0.0.1']
+  pre_request: <function pre_request at 0xa4da56c>
+  post_request: <function post_request at 0xa4da5dc>
+  forwarded_allow_ips: ['127.0.0.1']
+  worker_int: <function worker_int at 0xa4da374>
+  ca_certs: None
+  threads: 1
+  max_requests: 0
+  chdir: /home/avery/Websites/yasconference
+  daemon: False
+  user: 1000
+  limit_request_line: 4094
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  certfile: None
+  worker_exit: <function worker_exit at 0xa4da684>
+  paste: None
+  default_proc_name: yasconference.wsgi:application
+  errorlog: gunicorn.log
+  logger_class: gunicorn.glogging.Logger
+  syslog_addr: udp://localhost:514
+  syslog_prefix: None
+  ciphers: TLSv1
+  worker_abort: <function worker_abort at 0xa4da41c>
+  loglevel: debug
+  bind: ['unix:/home/avery/Websites/yasconference/run/gunicorn.sock']
+  raw_env: []
+  reload: False
+  limit_request_field_size: 8190
+  nworkers_changed: <function nworkers_changed at 0xa4da72c>
+  timeout: 30
+  on_starting: <function on_starting at 0xa4d3f44>
+  debug: False
+  django_settings: None
+  tmp_upload_dir: None
+  keyfile: None
+  backlog: 2048
+[2014-11-02 18:22:21 +0000] [28944] [INFO] Starting gunicorn 19.1.1
+[2014-11-02 18:22:21 +0000] [28944] [DEBUG] Arbiter booted
+[2014-11-02 18:22:21 +0000] [28944] [INFO] Listening at: unix:/home/avery/Websites/yasconference/run/gunicorn.sock (28944)
+[2014-11-02 18:22:21 +0000] [28944] [INFO] Using worker: sync
+[2014-11-02 18:22:21 +0000] [28955] [INFO] Booting worker with pid: 28955
+[2014-11-02 18:22:21 +0000] [28956] [INFO] Booting worker with pid: 28956
+[2014-11-02 18:22:21 +0000] [28958] [INFO] Booting worker with pid: 28958
+[2014-11-02 18:22:21 +0000] [28944] [DEBUG] 3 workers
+[2014-11-02 18:22:26 +0000] [28956] [INFO] Worker exiting (pid: 28956)
+[2014-11-02 18:22:26 +0000] [28955] [INFO] Worker exiting (pid: 28955)
+[2014-11-02 18:22:26 +0000] [28944] [DEBUG] 3 workers
+[2014-11-02 18:22:26 +0000] [28944] [INFO] Handling signal: int
+[2014-11-02 18:22:26 +0000] [28958] [INFO] Worker exiting (pid: 28958)
+[2014-11-02 18:22:26 +0000] [28944] [INFO] Shutting down: Master
+[2014-11-02 18:26:13 +0000] [29209] [DEBUG] Current configuration:
+  proxy_protocol: False
+  worker_connections: 1000
+  syslog: False
+  statsd_host: None
+  post_fork: <function post_fork at 0x9b2f224>
+  pythonpath: /home/avery/Websites
+  enable_stdio_inheritance: False
+  worker_class: sync
+  ssl_version: 3
+  suppress_ragged_eofs: True
+  syslog_facility: user
+  when_ready: <function when_ready at 0x9b2f0d4>
+  pre_fork: <function pre_fork at 0x9b2f17c>
+  cert_reqs: 0
+  preload_app: False
+  workers: 3
+  keepalive: 2
+  accesslog: None
+  pidfile: None
+  worker_tmp_dir: None
+  group: 100
+  graceful_timeout: 30
+  spew: False
+  proc_name: yasconference
+  umask: 0
+  on_reload: <function on_reload at 0x9b2f02c>
+  post_worker_init: <function post_worker_init at 0x9b2f2cc>
+  pre_exec: <function pre_exec at 0x9b2f4c4>
+  limit_request_fields: 100
+  on_exit: <function on_exit at 0x9b2f7d4>
+  config: None
+  logconfig: None
+  check_config: False
+  do_handshake_on_connect: False
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  proxy_allow_ips: ['127.0.0.1']
+  pre_request: <function pre_request at 0x9b2f56c>
+  post_request: <function post_request at 0x9b2f5dc>
+  forwarded_allow_ips: ['127.0.0.1']
+  worker_int: <function worker_int at 0x9b2f374>
+  ca_certs: None
+  threads: 1
+  max_requests: 0
+  chdir: /home/avery/Websites/yasconference
+  daemon: False
+  user: 1000
+  limit_request_line: 4094
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  certfile: None
+  worker_exit: <function worker_exit at 0x9b2f684>
+  paste: None
+  default_proc_name: yasconference.wsgi:application
+  errorlog: gunicorn.log
+  logger_class: gunicorn.glogging.Logger
+  syslog_addr: udp://localhost:514
+  syslog_prefix: None
+  ciphers: TLSv1
+  worker_abort: <function worker_abort at 0x9b2f41c>
+  loglevel: debug
+  bind: ['unix:/home/avery/Websites/yasconference/run/gunicorn.sock']
+  raw_env: []
+  reload: False
+  limit_request_field_size: 8190
+  nworkers_changed: <function nworkers_changed at 0x9b2f72c>
+  timeout: 30
+  on_starting: <function on_starting at 0x9b28f44>
+  debug: False
+  django_settings: None
+  tmp_upload_dir: None
+  keyfile: None
+  backlog: 2048
+[2014-11-02 18:26:13 +0000] [29209] [INFO] Starting gunicorn 19.1.1
+[2014-11-02 18:26:13 +0000] [29209] [DEBUG] Arbiter booted
+[2014-11-02 18:26:13 +0000] [29209] [INFO] Listening at: unix:/home/avery/Websites/yasconference/run/gunicorn.sock (29209)
+[2014-11-02 18:26:13 +0000] [29209] [INFO] Using worker: sync
+[2014-11-02 18:26:13 +0000] [29220] [INFO] Booting worker with pid: 29220
+[2014-11-02 18:26:14 +0000] [29221] [INFO] Booting worker with pid: 29221
+[2014-11-02 18:26:14 +0000] [29222] [INFO] Booting worker with pid: 29222
+[2014-11-02 18:26:14 +0000] [29209] [DEBUG] 3 workers
+[2014-11-02 18:26:23 +0000] [29221] [INFO] Worker exiting (pid: 29221)
+[2014-11-02 18:26:23 +0000] [29222] [INFO] Worker exiting (pid: 29222)
+[2014-11-02 18:26:23 +0000] [29220] [INFO] Worker exiting (pid: 29220)
+[2014-11-02 18:26:23 +0000] [29209] [DEBUG] 3 workers
+[2014-11-02 18:26:23 +0000] [29209] [INFO] Handling signal: int
+[2014-11-02 18:26:23 +0000] [29209] [INFO] Shutting down: Master

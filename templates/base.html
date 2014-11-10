@@ -21,10 +21,11 @@
 <link rel="stylesheet" href="{% static "css/bootstrap-theme.css" %}">
 
 
-<link rel="stylesheet" href="{% static "css/component.css" %}">
+<!--<link rel="stylesheet" href="{% static "css/component.css" %}">
 <link rel="stylesheet" href="{% static "css/normalize.css" %}">
-<link rel="stylesheet" href="{% static "css/custom.css" %}">
+<link rel="stylesheet" href="{% static "css/custom.css" %}">-->
 <!--<link rel="stylesheet" href="{% static "css/style5.css" %}">Dropdown styles-->
+<!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/yeti/bootstrap.min.css">-->
 
 
 {% if LANGUAGE_BIDI %}
@@ -71,7 +72,9 @@ $("nav.cl-effect-14 div a").hover(function(){
         $("#"+bubble+"q").fadeOut(500);
 
     });
+
 });
+
 </script>
 {% endblock %}
 {% endcompress %}
@@ -84,35 +87,10 @@ $("nav.cl-effect-14 div a").hover(function(){
 {% block extra_head %}{% endblock %}
 </head>
 
-<body id="{% block body_id %}body{% endblock %}" data-spy="scroll" data-target="#affix">
+<body id="{% block body_id %}body{% endblock %}" >
 
-<div class="media">
-     <img src="{% static "img/logo.jpg" %}" class="pull-left media-object logo" alt="Responsive image">
-<div class="cl-effect-14 media-body">
-    <h1>Youth Achieving Success</h1>
-</div>
-</div>
+{#{% include "header.html" %}#}
 
-<nav class="cl-effect-14">
-    <div id="affix" data-spy="affix" data-offset-top="300" data-offset-bottom="300" class="hidden-xs hidden-sm hidden-md">
-    <a href="#site-header" id="home">HOME</a>
-    <a id="about" href="/about/">ABOUT US
-      <div id="aboutq" class="quote" style="background:#F57AE5;"><blockquote><p>Executive Team</p><hr><p>Regional Marketers</p></blockquote></div>
-    </a>
-    <a id="conference" href="/conference/">CONFERENCE
-        <div id="conferenceq" class="quote" style="background:#F3D879;"><blockquote><p>Networking</p><hr><p>Schedule and Venue</p><hr><p>YAS Scholarship</p></blockquote></div>
-    </a>
-    
-    <a id="career-focuses" href="/career-focuses/">CAREER FOCUSES
-        <div id="career-focusesq" class="quote" style="background:#F57A96;"><blockquote><p>Engineering</p><hr><p>Game Design</p><hr><p>Investment Banking</p><hr><p>...</p></blockquote></div>
-    </a>
-    <a href="/registration/">REGISTRATION</a>
-    <a href="/sponsorship/">SPONSORSHIP</a>
-    <a id="contact" href="/contact/">CONTACT US
-    <div id="contactq" class="quote"><blockquote><p>FAQ</p></blockquote></div></a>
-</nav>
-
-<!--
 <div class="navbar navbar-default" role="navigation">
 <div class="container">
 <div class="navbar-header">
@@ -131,7 +109,8 @@ $("nav.cl-effect-14 div a").hover(function(){
 </div>
 </div>
 </div>
--->
+
+
 <div id="site-header" class="container">
 
 {% nevercache %}
@@ -147,7 +126,9 @@ $("nav.cl-effect-14 div a").hover(function(){
 {% endif %}
 {% endnevercache %}
 
+
 <h1>{% block title %}{% endblock %}</h1>
+
 
 <ul class="breadcrumb">
 {% spaceless %}
